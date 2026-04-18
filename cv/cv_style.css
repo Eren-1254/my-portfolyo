@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0a0a0a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter' sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.linkler{
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    background-color: #141414;
+    border: 2px solid #27272a;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+.linkler a{
+    color: #ffffff;
+    font-family:'inter' sans-serif ;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.linkler a :hover{
+    color: #a1a1aa;
+}
+
+
+.kart{
+    text-align: center;
+    margin:80px 0 40px;
+}
+.daire{
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    border: 2px solid #27272a;
+    margin: 0 auto 20px;
+    overflow: hidden;
+
+}
+.daire img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.tanitim-alani, .proje-alani{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.aciklama,.atm-aciklama,.zar-aciklama{
+    flex: 1;
+    background-color: #141414;
+    border: 2px solid #27272a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    font-family: 'inter' sans-serif;
+    line-height: 1.6;
+
+}
+.kare,.kare2{
+    width: 180px; height: 180px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px solid #27272a;
+    overflow: hidden;
+}
+.kare img,.kare2 img{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.proje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.proje-alani:nth-child(even){
+    flex-direction: row-reverse;
+}
+#iletisim{
+    text-align: center;
+    padding: 50px 0;
+}
+.ikon-grubu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.ikon-grubu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;       
+    height: 50px;
+    background-color: #141414; 
+    border: 1px solid #27272a;
+    border-radius: 10px;       
+    color: #a1a1aa;            
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.ikon-grubu a:hover {
+    background-color: #27272a;
+    color: #ffffff;            
+    transform: translateY(-5px); 
+}
+
+
